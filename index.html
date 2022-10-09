@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Password Generator</title>
+        <link rel="icon"
+            href="https://www.freeiconspng.com/thumbs/key-icon/black-key-symbol-icon-6.png">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+            integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+            />
+    </head>
+    <body>
+        <header class="animate__animated animate__zoomIn">
+            <h1 class="t-h1">TO MAKE THE PASSWORD MORE SECURE</h1>
+        </header>
+
+        <!-- Content -->
+        <main>
+            <div class="container animate__animated animate__slideInDown">
+                <h2>Password Generator</h2>
+                <div class="menampilkan-password">
+                    <span id="result"></span>
+                    <button class="btn" id="clipboard">
+                        <i class="fa-regular fa-clipboard"></i>
+                    </button>
+                </div>
+                <div class="utk-setting">
+                    <div class="setting">
+                        <label>Panjang Password</label>
+                        <input type="number" id="length" min="5" max="25"
+                            value="25">
+                    </div>
+                    <div class="setting">
+                        <label>Sertakan Huruf Besar</label>
+                        <input type="checkbox" id="uppercase" checked>
+                    </div>
+                    <div class="setting">
+                        <label>Sertakan Huruf Kecil</label>
+                        <input type="checkbox" id="lowercase" checked>
+                    </div>
+                    <div class="setting">
+                        <label>Sertakan Angka</label>
+                        <input type="checkbox" id="numbers" checked>
+                    </div>
+                    <div class="setting">
+                        <label>Sertakan Simbol</label>
+                        <input type="checkbox" id="symbols" checked>
+                    </div>
+                </div>
+
+                <button class="btn btn-large" id="generate">
+                    Generate Password
+                </button>
+
+                <div class="creator">
+                    <p>Copyright <span id="year"></span>, DimasAlif</p>
+                    <div class="sosmed">
+                        <a href="https://www.instagram.com/dimsalif_/"
+                            target="_blank">
+                            <i class="icon fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="https:api.whatsapp.com/send/?phone=6281211273545&text=tutor%20donk%20Bangg%20😋" target="_blank">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                        <a
+                            href="https://www.youtube.com/channel/UCdkNfGIhjVMr_68HpoeyDFw"
+                            target="_blank">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <script src="script.js"></script>
+    </body>
+</html>
